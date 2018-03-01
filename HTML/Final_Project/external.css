@@ -1,8 +1,8 @@
 p {
     font-family: "Times New Roman", Times, serif;
     font-size: 25px;}
-nav {  
-    background-color: #f2e1d7;}
+.navbar {  
+    background-color: #D0D0D0;}
 body {
     position: relative; }
 .carousel-inner img {
@@ -11,7 +11,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #D0D0D0;}
-#navbar a {
+nav-item {
   float: left;
   display: block;
   color: black;
@@ -31,6 +31,37 @@ body {
   position: fixed;
   top: 0;
   width: 100%}
-.sticky + .content {
-  padding-top: 60px;}
-  
+img[alt="card_img"] {
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 1s ease;}
+img[alt="card_img"]:hover {
+   -webkit-filter: grayscale(0%);
+   -moz-filter: grayscale(0%);
+   filter: grayscale(0%);}
+    
+    
+ /* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
