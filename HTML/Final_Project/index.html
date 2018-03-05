@@ -11,6 +11,89 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             <link rel="stylesheet" type="text/css" href="external.css">
               <style>
+              p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;}
+.navbar {  
+    background-color: #D0D0D0;}
+body {
+    position: relative; }
+.carousel-inner img {
+    width: 100%;
+    height: 100%;}
+#navbar {
+  overflow: hidden;
+  background-color: #D0D0D0;}
+nav-item {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;}
+#navbar a:hover {
+  background-color: white;
+  color: black;}
+#navbar .active {
+  background-color: #85DCBD;
+  color: white;}
+.content {
+  padding: 16px;}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%}
+img[alt="card_img"] {
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 1s ease;}
+img[alt="card_img"]:hover {
+   -webkit-filter: grayscale(0%);
+   -moz-filter: grayscale(0%);
+   filter: grayscale(0%);}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }}
+#myDiv {
+  display: none;
+  text-align: center;}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;}
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;}
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;}}
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;}}
              </style>
   </head>
     <body onload="myFunction()" style="background-image:url('https://image.shutterstock.com/mosaic_250/0/0/105855380.jpg'); margin:0;">
